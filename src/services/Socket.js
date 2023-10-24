@@ -11,7 +11,7 @@ const socket = io("http://172.16.10.81:3002", {
 let mqttClient;
 
 if (typeof window !== "undefined") {
-  mqttClient = new MqttClient("172.16.10.81", 9001, "", "");
+  mqttClient = new MqttClient("wss://172.16.10.81:9001/", "", "");
 } else {
   const mqtt = require("mqtt");
   mqttClient = mqtt.connect("mqtt://172.16.10.81:1883");
