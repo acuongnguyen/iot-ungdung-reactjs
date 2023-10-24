@@ -7,13 +7,13 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import "../styles/style.css";
-import avtImage from "../asserts/images/avt.jpg";
-import { setupSocketListeners } from "../services/Socket";
-import Dashboard from "./Dashboard";
-import Profile from "./Profile";
-import DataSensor from "./DataSensor";
-import ActivityHistory from "./ActivityHistory"; 
+import "../src/styles/style.css";
+import avtImage from "../src/asserts/images/avt.jpg";
+import { setupSocketListeners } from "./services/Socket";
+import Dashboard from "./views/Dashboard";
+import Profile from "./views/Profile";
+import DataSensor from "./views/DataSensor";
+import ActivityHistory from "./views/ActivityHistory"; 
 
 function App() {
   // khai báo state cho nhiệt độ, độ ẩm và ánh sáng
